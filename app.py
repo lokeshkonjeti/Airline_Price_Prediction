@@ -100,7 +100,7 @@ def main():
     if st.button('Predict'):
         # Make prediction
         prediction = predict(input_data)
-        st.success(f'The predicted class is {prediction}')
+        st.success(f'The predicted price is: {prediction[0]:.2f}')
 
 if __name__ == '__main__':
     main()
