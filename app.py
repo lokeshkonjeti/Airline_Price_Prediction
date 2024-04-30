@@ -68,7 +68,7 @@ def main():
 
     input_data["Destination_LabelEncoded"]=destinations.index(destination_option)
 
-    input_data['Duration_LabelEncoded']=st.number_input("Duration Label",min_value=0,format="%d")
+    input_data['Duration_LabelEncoded']=0
 
     infos_option=st.selectbox("Select Additionals",infos)
     input_data["Additional_Info_LabelEncoded"]=infos.index(infos_option) #Get the index of additional info
